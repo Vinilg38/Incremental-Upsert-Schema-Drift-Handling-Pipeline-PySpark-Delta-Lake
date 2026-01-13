@@ -117,13 +117,13 @@ Gold	Aggregations & KPIs	latency, counts, sums
 
 Sample result:
 
-+--------+-------------+------------+-----------+
-|user_id |total_events |total_amount|late_events|
-+--------+-------------+------------+-----------+
-|101     |1            |120.0       |0          |
-|103     |1            |90.0        |0          |
-|102     |1            |85.0        |1          |
-+--------+-------------+------------+-----------+
+### 📊 Gold Layer (Aggregated Metrics)
+
+| user_id | total_events | total_amount | late_events |
+|--------|---------------|--------------|-------------|
+| 101    | 1             | 120.0        | 0           |
+| 103    | 1             | 90.0         | 0           |
+| 102    | 1             | 85.0         | 1           |
 
 User 102 is correctly tagged with a late event based on latency > 10 min.
 
